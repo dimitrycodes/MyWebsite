@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i');
+
+//this removes empty space round the cover photo. 
+body {
+  margin: 0px;
+}
+
+/*this sets the height of the header and image*/
+header {
+  height: 746px;
+  background: url(images/Future-Technology-Tunnel-med.jpg);
+  background-size: cover;
+}
+
+
+/*Colors and fonts for the headings in the header*/
+header h1 {
+  text-align: center;
+  font-family: Montserrat, 'Times New Roman', Times, serif;
+  font-size: 70px;
+  color: orangered ; 
+  text-transform: uppercase;
+  margin-top: 0px;
+
+}
+
+header h3 {
+  text-align: center;
+  font-family: 'IM Fell Great Primer', serif;
+  font-size: 25px;
+  padding-top: 250px;
+  color:orangered;
+  margin: 0px;
+}
+
+header h4 a {
+  background-color: black; 
+  color: #fc683a;
+  text-decoration: none;
+  font-family: Montserrat, Arial, Serif;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+/*Explore button in header*/
+header nav p a {
+  text-decoration: none;
+  background-color: black;
+  color: #fc683a;
+  font-size: 25px;
+  margin: 5px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  float: right;
+  
+}
+
+a:link {
+  color: #fc683a;
+}
+a:visited {
+  color: blue;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: pink;
+}
+
+main {
+  
+}
+
+/*this sets the layout for the ruler except for two occasions coded inline in the HTML text*/
+hr {
+  width: 600px; 
+  height: 32px; 
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  padding-right: 0px;
+  background-image: url(images/hr-orange-ruler.jpg); 
+  border: none;
+}
+
+/*main profile picture set to a circle*/
+main img {
+  border-radius: 50%;
+  padding: 50px;
+}
+
+/*centers the h2 headings on the page as well as the explore button in h4*/
+h2, h4 {
+  text-align: center;
+
+}
+
+/*Sets font fo all items in main*/
+main {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+/*centers profile photo in h3*/
+main h3 {
+  text-align: center;
+}
+
+main p {
+  text-align: center;
+  padding: 0px 100px 60px 100px;
+}
+
+/*centers the LinkedIn and GitHub icons in h6*/
+main h6 {
+  text-align: center; 
+  padding: 0px
+}
+
+/*this brings all of the list items to the center*/
+main ol li, main ul li {
+  text-align: center;
+  list-style-position: inside;
+}
+
+/*this sets the footer*/
+footer {
+  background-color: black;
+  padding: 0px;
+  height: 200px;
+
+}
+/*This makes the text in the footer white against the black footer background*/
+.white-footer-text {
+  font-family: Montserrat, serif;
+  color: white;
+  text-align: center; 
+}
