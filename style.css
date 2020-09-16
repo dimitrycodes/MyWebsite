@@ -8,7 +8,7 @@ body {
 /*this sets the height of the header and image*/
 header {
   height: 746px;
-  background: url(images/Future-Technology-Tunnel-med.jpg);
+  background: url(images/future-city.jpg);
   background-size: cover;
 }
 
@@ -16,11 +16,12 @@ header {
 /*Colors and fonts for the headings in the header*/
 header h1 {
   text-align: center;
-  font-family: Montserrat, 'Times New Roman', Times, serif;
-  font-size: 70px;
-  color: orangered ; 
+  font-family: Verdana, Montserrat, 'Times New Roman', Times, serif; 
+  font-size: 90px;
+  color: black; 
   text-transform: uppercase;
   margin-top: 0px;
+
 
 }
 
@@ -29,7 +30,7 @@ header h3 {
   font-family: 'IM Fell Great Primer', serif;
   font-size: 25px;
   padding-top: 250px;
-  color:orangered;
+  color:  black;
   margin: 0px;
 }
 
@@ -110,7 +111,7 @@ main p {
 }
 
 /*centers the LinkedIn and GitHub icons in h6*/
-main h6 {
+.center-socialmedia-icons {
   text-align: center; 
   padding: 0px
 }
