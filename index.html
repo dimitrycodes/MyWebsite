@@ -7,94 +7,139 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
+  
   <body>
-
     <header>
+        <h2><a href="#me">EXPLORE</a></h2>
       <nav>
-        <p><a href="#contact">Contact</a></p>
-        <p><a href="#services">Services</a></p>
-        <p><a href="#portfolio">Portfolio</a></p>
-        <p><a href="#home">Home</a></p>
-      </nav>
+          <ul id="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-      <h3>The Future is Now</h3>
-      <h1>Dimitry Alriche</h1>
-      <h4><a href="#skills">EXPLORE</a></h4>
+      <!--<h3>The Future is Now</h3>-->
+      
+      <!--<h4><a href="#skills">EXPLORE</a></h4>-->
     </header>
 
     <main>
       <!--ruler set like this in two locations-->
-      <hr style="width: 600px; height: 64px; margin-top: 30px; margin-bottom: 30px; background-image: url(images/hr-orange-ruler.jpg); border: none">
+    
+      <h1 id="me">Dimitry Alriche</h1>
       <h2 id="skills">Full Stack Software Engineer</h2>
-      <h3> <img src="images/dimitry-alriche.jpg" width="250" alt="Dimitry Alriche's Corporate Photo"></h3>
+      
+    <section>
+        <div class="group">
+            <div class="item">
+                <h3> <img src="images/dimitry-alriche.jpg" width="250" alt="Dimitry Alriche's Corporate Photo"></h3>
+            </div>
 
-      <p>Full Stack Software Engineer with extensive experience designing and implementing various projects of all sizes. Capable of front and back end development with an eagerness to learn new technologies.Very mobile at this moment traveling back and forth between Haiti, Georgia, Florida, and Utah. I love the beach, exercise, sports, and scripture study during my down time. I love to solve problems with code. Currently building a foundation in Python and C++. Oh, and my guilty pleasures are ice cream, cake, pies, and other delicious pastries which I consistently deny myself of in order to remain sane.</p>
-
-      <hr>
+            <div class="item">
+                <p>Full Stack Software Engineer with extensive experience designing and implementing various projects of all sizes. Capable of front and back end development with an eagerness to learn new technologies. Very mobile at this moment traveling back and forth between Haiti, Georgia, Florida, and Utah. I love the beach, exercise, sports, and scripture study during my down time. I love to solve problems with code and working on teams with great programmers. Currently building a foundation in Python and C++. Oh, and my guilty pleasures are ice cream, cake, pies, and other delicious pastries which I consistently deny myself of in order to remain sane.</p>
+            </div>
+        </div>
+    </section>
     
-    <div>
-      <h2>Skills</h2>
-      <ul>
-        <li>Javascript - Level 5/5</li>
-        <li>React.js - Level 4/5</li>
-        <li>Node.js - Level 5/5</li>
-        <li>PostgreSQL - Level 5/5</li>
-        <li>HTML - Level 5/5</li>
-        <li>CSS - Level 4/5</li>
-      </ul>
+    <section class="bg-callout1">
+    <div class="group">
+        <div class="item">
+            <h2>Skills</h2>
+            <ul>
+                <li>Javascript - Level 5/5</li>
+                <li>React.js - Level 4/5</li>
+                <li>Node.js - Level 5/5</li>
+                <li>PostgreSQL - Level 5/5</li>
+                <li>HTML - Level 5/5</li>
+                <li>CSS - Level 4/5</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h2>Projects</h2>
+            <ol>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+                <li>Project 4</li>
+                <li>Project 5</li>
+                <li>Project 6</li>>
+            </ol>
+        </div>
     </div>
-
-    <div>
-      <h2>Projects</h2>
-      <ol>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-        <li>Project 4</li>
-        <li>Project 5</li>
-      </ol>
-    </div>
+    </section>
     
-    <hr>
-    
-    <article id="portfolio">
-      <h2>Porfolio</h2>
+<section id="portfolio">
+        <h2>Porfolio</h2>
       <p>Description of what the projects’ goals were and how I accomplished them. Use multiple screenshots and a detailed write up of my involvement. Maybe even software used and programming techniques. Links to code samples and description can work also. </p>
+    <div class="container">
+        <div class="itemc">
+            <h3>Project 1</h3>
+        </div>
+        <div class="itemc">
+             <h3>Project 2</h3>
+        </div>
+        <div class="itemc">
+            <h3>Project 3</h3>
+        </div>
+        <div class="itemc">
+            <h3>Project 4</h3>
+        </div>
+        <div class="itemc">
+            <h3>Project 5</h3>
+        </div>
+        <div class="itemc">
+            <h3>Project 6</h3>
+        </div>
+    </div>
 
-      <h3>Project 1</h3>
-      <h3>Project 2</h3>
-      <h3>Project 3</h3>
-      <h3>Project 4</h3>
-      <h3>Project 5</h3>
-    </article>
+</section>
 
-    <hr>
 
-    <article id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Front End Programming</li>
-        <li>Back End Progamming</li>
-        <li>Creation of responsive web apps</li>
-        <li>Rest APIs</li>
-        <li>Database</li>
-        <li>Agile Development</li>
-        <li>Website management and development</li>
-      </ul>
-    </article>
+    <section id="services" class="bg-callout2">
+        <h2>Services</h2>
+        <div>
+                <ul>
+                    <li>Front End Programming</li>
+                    <li>Back End Progamming</li>
+                    <li>Creation of responsive web apps</li>
+                    <li>Rest APIs</li>
+                    <li>Database</li>
+                    <li>Agile Development</li>
+                    <li>Website management and development</li>
+                </ul>
+        </div>
+    </section>
 
-<!--ruler set like this in two locations-->
-    <hr style="width: 600px; height: 32px; margin-top: 30px; margin-bottom: 30px; background-image: url(images/hr-orange-ruler.jpg); border: none">
+<!--Contact with linkedIn and GitHub image links-->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Please contact me with your programming and software needs and I will be sure to get back to you within 24 hours. Currently available for both full-time and contract work. If you would like to chat about a project, please send me an email and I will respond to you accordingly. Cheers.</p>
+<!--This is the contact form for the page-->
+    <h3>Contact Form</h3>
+    <div class="group">
+      <div class="item">
+        <form action="https://formspree.io/strongsafetyking@yahoo.com" method="POST">
+          <label for="user-name">Name:</label>
+          <input id="user-name" type="text" name="name">
 
-<!--Contact session with linkedIn and GitHub image links-->
-    <article id="contact">
-      <h2>Contact</h2>
-      <p>Please contact with your programming and software needs and I will be sure to get back to you within 24 hours. Currently available for both full-time and contract work. If you would like to chat about a project, please send me an email and I will respond to you accordingly. Cheers.</p>
-      <p class="center-socialmedia-icons"><a href="https://github.com/dimitrycodes" target="\_blank"><img src="images/GitHub-Logo.png" width="100" alt="GitHub Logo"></a></p>
-      <p class="center-socialmedia-icons"><a href="https://www.linkedin.com/in/dimitrya" target="\_blank"><img src="images/Linkedin-Logo.png" width="100" alt="Linked Logo"></a></p>
-    </article>
+          <label for="user-email">Email:</label>
+          <input id="user-email" type="text" name="email">
 
-    <hr>
+          <label for="user-message">Message:</label>
+          <textarea id="user-message" name="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        </div>
+        <div class="item center-socialmedia-icons">
+            <p class="center-socialmedia-icons"><a href="https://github.com/dimitrycodes" target="\_blank"><img src="images/GitHub-Logo.png" width="100" alt="GitHub Logo"></a></p>
+            <p class="center-socialmedia-icons"><a href="https://www.linkedin.com/in/dimitrya" target="\_blank"><img src="images/Linkedin-Logo.png" width="100" alt="Linked Logo"></a></p>
+        </div>
+    </div>
+      
+</section>
     </main>
 
     <footer>
