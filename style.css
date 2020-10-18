@@ -206,6 +206,11 @@ main p {
   padding: 15px 10px;
 }
 
+/*Removing Padding from main p above for single listings under Services, Skills used, etc etc*/
+.mainpexcept {
+  padding-bottom: 0;
+}
+
 .introh3 {
   margin: 0;
   padding: 0;
@@ -291,7 +296,7 @@ section.bg-callout3 {
 }
   .itemc {
     flex: 0 32%;
-    height: 520px;
+    height: 480px;
     margin-bottom: 2%; /* (100-32*3)/2 */
     flex-direction: row;
 }
