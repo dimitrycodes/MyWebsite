@@ -194,12 +194,22 @@ main h3 {
   text-align: center;
 }
 
+/*Color for links within the main*/
+main a {
+  color: #fc683a;
+}
+
+
 
 main p {
   text-align: center;
   padding: 15px 10px;
 }
 
+.introh3 {
+  margin: 0;
+  padding: 0;
+}
 
 /*centers the LinkedIn and GitHub icons in h6*/
 .center-socialmedia-icons {
@@ -253,6 +263,12 @@ section.bg-callout2 {
 
 }
 
+section.bg-callout3 {
+  color: white;
+  background-color: black;
+  padding: 5px 0;
+}
+
 /*Parent Child Container for Portfolio*/
 .container {
   display: flex;
@@ -267,17 +283,16 @@ section.bg-callout2 {
 }
 
 @media all and (min-width:800px) {
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-
-.itemc {
-  flex: 0 32%;
-  height: 100px;
-  margin-bottom: 2%; /* (100-32*3)/2 */
+  .itemc {
+    flex: 0 32%;
+    height: 520px;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    flex-direction: row;
 }
 }
