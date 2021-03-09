@@ -101,7 +101,11 @@ main h3 {
 
 /*Color for links within the main*/
 main a {
-  color: #fc683a;
+  color: #0B1C51;
+}
+/*color for click here link*/
+.about-me a {
+  color: white;
 }
 
 
@@ -169,6 +173,7 @@ section.bg-callout1 {
 section.bg-callout2 {
   background-color:  #0B1C51;
   color: white;
+  padding-top: 5px;
   padding-bottom: 5px;
 
 }
@@ -180,7 +185,7 @@ section.bg-callout3 {
 }
 
 /*Parent Child Container for Portfolio*/
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -190,7 +195,7 @@ section.bg-callout3 {
   flex: 1;
   height: 100px;
   margin-bottom: 2%; /* (100-32*3)/2 */
-}
+} */
 
 /*removes space at the top of the header on mobile.*/
 h2.explore {
@@ -301,15 +306,18 @@ header nav ul li:last-child a {
 @media all and (min-width:800px) {
   .container {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: space-between;
 }
   .itemc {
-    flex: 0 32%;
-    height: 800px;
+    /* flex: 0 32%; */
+    /* height: 800px; */
+    width: 48%;
+    /* padding-bottom: 48% ; */
     margin-bottom: 2%; /* (100-32*3)/2 */
-    flex-direction: row;
+    position: relative;
+    /* flex-direction: row; */
 }
 h2.explore {
   margin-top: 20px;
@@ -317,11 +325,16 @@ h2.explore {
 }
 }
 
-a> img.screens {
-  display: none;
+/*Screens of projects*/
+img.screens {
+  border-radius: 0;
+  padding: 15px 10px; 
+  /* padding-top: 5%; */
+
   
 }
 
+/*
 a:hover > img.screens {
   display:block;
   height: 400px;
@@ -331,7 +344,7 @@ a:hover > img.screens {
   background-color: black;
 
   content: '';
-/* background: url('YOUR IMAGE LINK HERE'); */
+/* background: url('YOUR IMAGE LINK HERE'); */ /*
   background-size:contain;
   background-repeat:no-repeat;
 width: 395px; 
@@ -345,7 +358,7 @@ transition: transform .4s cubic-bezier(.86,0,.07,1),opacity .4s cubic-bezier(.86
   -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
 	        animation: flip-in-hor-bottom 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
   
-}
+} */
 
 /*h2 services*/
 h2.services {
