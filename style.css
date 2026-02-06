@@ -74,6 +74,13 @@ main img {
   margin-right: auto;
 }
 
+/* Center only the profile picture */
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+}
+
+
 /*Sets group/parent and items/children*/
 
 .group {
