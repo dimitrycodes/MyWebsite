@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i');
+
 /* TEST: if you see a thick green border on mobile, CSS is loading */
 @media (max-width: 800px) {
   header { border: 8px solid lime !important; }
 }
-
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i');
 
 /* Prevent layout shift from overflow and make sizing predictable */
 *,
