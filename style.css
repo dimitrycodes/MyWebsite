@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i');
 
+/* Prevent layout shift from overflow and make sizing predictable */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all images scale down on smaller screens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /*this sets the height of the header and image*/
 header {
@@ -328,7 +345,9 @@ h2.explore {
 /*Screens of projects*/
 img.screens {
   border-radius: 0;
-  padding: 15px 10px; 
+  padding: 15px 10px;
+  width: 100%;
+  height: auto;
   /* padding-top: 5%; */
 
   
@@ -364,6 +383,15 @@ transition: transform .4s cubic-bezier(.86,0,.07,1),opacity .4s cubic-bezier(.86
 h2.services {
   padding-top: 19px;
 } 
+
+/* Mobile spacing so content doesn't feel stuck to the edge */
+@media (max-width: 799px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 
 
 
