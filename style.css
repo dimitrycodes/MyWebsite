@@ -211,7 +211,7 @@ section.bg-callout3 {
 .itemc {
   flex: 1;
   height: 100px;
-  margin-bottom: 2%; /* (100-32*3)/2 */
+  margin-bottom: 2%; /* (100-32*3)/2
 } */
 
 /*removes space at the top of the header on mobile.*/
@@ -389,6 +389,13 @@ h2.services {
   .container {
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
