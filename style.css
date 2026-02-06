@@ -1,6 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i');
 
+/* TEST: if you see a thick green border on mobile, CSS is loading */
+@media (max-width: 800px) {
+  header { border: 8px solid lime !important; }
+}
 
+/* Prevent layout shift from overflow and make sizing predictable */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all images scale down on smaller screens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /*this sets the height of the header and image*/
 header {
@@ -17,7 +45,6 @@ header h2 a {
   text-decoration: none;
   font-size: 52px;
   text-align: center;
-  margin-top: 0px;
 }
 
 /*Responsive Nav*/
@@ -31,7 +58,11 @@ header nav ul {
   padding-left: 0px;
   list-style: none;
   font-family: Montserrat, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 
 /*this removes empty space round the cover photo.*/ 
 body {
@@ -195,7 +226,7 @@ section.bg-callout3 {
 .itemc {
   flex: 1;
   height: 100px;
-  margin-bottom: 2%; /* (100-32*3)/2 
+  margin-bottom: 2%; /* (100-32*3)/2
 } */
 
 /*removes space at the top of the header on mobile.*/
@@ -254,7 +285,7 @@ h2.explore {
   font-family: Montserrat, Arial, Serif;
   padding: 15px 20px;
   border-radius: 20px;
-}
+}*/
 
 /*Nav bar Buttons*/
 header nav li a {
@@ -310,7 +341,7 @@ header nav ul li:last-child a {
     /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+}
   .itemc {
     /* flex: 0 32%; */
     /* height: 800px; */
@@ -319,17 +350,19 @@ header nav ul li:last-child a {
     margin-bottom: 2%; /* (100-32*3)/2 */
     position: relative;
     /* flex-direction: row; */
-  }
-  h2.explore {
+}
+h2.explore {
   margin-top: 20px;
   margin-bottom: 20px;
-  }
+}
 }
 
 /*Screens of projects*/
 img.screens {
   border-radius: 0;
-  padding: 15px 10px; 
+  padding: 15px 10px;
+  width: 100%;
+  height: auto;
   /* padding-top: 5%; */
 
   
@@ -362,9 +395,33 @@ transition: transform .4s cubic-bezier(.86,0,.07,1),opacity .4s cubic-bezier(.86
 } */
 
 /*h2 services*/
-/* h2.services {
+h2.services {
   padding-top: 19px;
-}  */
+} 
+
+/* Mobile spacing so content doesn't feel stuck to the edge */
+@media (max-width: 799px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav li a {
+    margin: 5px;
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
 
 
 
